@@ -79,5 +79,10 @@ module ActiveRecord
     def new_record?
       false
     end
+
+    def self.primary_key
+      @primary_key ||= "id"
+    end
+
   end
 end
